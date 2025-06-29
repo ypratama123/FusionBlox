@@ -107,4 +107,4 @@ Project ini dilisensikan di bawah [MIT License](LICENSE).
 <div align="center">
   <p>⭐ Jika Anda menyukai project ini, jangan lupa berikan star! ⭐</p>
   <p>🎮 Selamat bermain FusionBlox! 🎮</p>
-</div> 
+</div>
