@@ -10,8 +10,8 @@
 <br>
 
 <div align="center">
-  <h3>🎯 Game Puzzle Klasik dengan Sentuhan Modern</h3>
-  <p>FusionBlox adalah game Tetris yang dibangun dengan HTML5 Canvas dan JavaScript, menawarkan pengalaman bermain yang smooth dan responsif.</p>
+  <h3>🎯 Project Simpel Game Tetris untuk Pembelajaran</h3>
+  <p>FusionBlox adalah project sederhana yang dibuat untuk belajar pengembangan game menggunakan HTML5 Canvas dan JavaScript. Project ini dirancang sebagai langkah awal dalam memahami konsep game development.</p>
 </div>
 
 ---
@@ -78,11 +78,14 @@ cd FusionBlox
 - ✅ Edge
 - ✅ Mobile browsers
 
-## 🎨 Screenshot
+## 🎓 Tujuan Pembelajaran
 
-<div align="center">
-  <img src="https://via.placeholder.com/600x400/2c3e50/ffffff?text=FusionBlox+Game+Screenshot" alt="FusionBlox Game Screenshot" width="600">
-</div>
+Project ini dibuat dengan tujuan:
+- **Belajar HTML5 Canvas** - Memahami cara rendering game
+- **JavaScript Game Logic** - Implementasi logika permainan
+- **CSS Animations** - Membuat efek visual yang menarik
+- **Audio Integration** - Menambahkan efek suara ke game
+- **Responsive Design** - Membuat game yang bisa dimainkan di berbagai device
 
 ## 🤝 Kontribusi
 
@@ -107,4 +110,5 @@ Project ini dilisensikan di bawah [MIT License](LICENSE).
 <div align="center">
   <p>⭐ Jika Anda menyukai project ini, jangan lupa berikan star! ⭐</p>
   <p>🎮 Selamat bermain FusionBlox! 🎮</p>
+  <p>📚 Project ini dibuat untuk pembelajaran dan pengembangan skill game development 📚</p>
 </div>
