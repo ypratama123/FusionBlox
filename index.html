@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FusionBlox Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FusionBlox</h1>
+        
+        <div id="startMenu">
+            <h2>Selamat Datang di FusionBlox!</h2>
+            <button id="startButton">Mulai Game</button>
+        </div>
+
+        <div id="gameArea" style="display: none;">
+            <div class="game-info">
+                <div class="score">Skor: <span id="score">0</span></div>
+                <div class="level">Level: <span id="level">1</span></div>
+            </div>
+            
+            <canvas id="gameCanvas"></canvas>
+
+            <div class="controls">
+                <button id="pauseButton">Jeda</button>
+                <button id="exitButton">Keluar</button>
+            </div>
+            <div class="instructions">
+                <p>Gunakan tombol panah untuk bermain:</p>
+                <div class="controls-list">
+                    <p><span>⬅️</span> Kiri</p>
+                    <p><span>➡️</span> Kanan</p>
+                    <p><span>⬇️</span> Turun</p>
+                    <p><span>⬆️</span> Putar</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+
+    <!-- Elemen Audio Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="sounds/pixels.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html> 

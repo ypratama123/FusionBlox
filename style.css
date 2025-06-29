@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    color: #00ff88;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.score, .level {
+    color: #00ff88;
+    text-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+}
+
+#gameCanvas {
+    border: 3px solid #00ff88;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    background: linear-gradient(45deg, #00ff88, #00b8ff);
+    color: #1a1a2e;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
+}
+
+button:hover {
+    animation: glow 1.5s infinite;
+}
+
+button:active {
+    transform: translateY(1px);
+    filter: brightness(80%); /* Sedikit menggelap saat diklik */
+}
+
+#pauseButton {
+    background: linear-gradient(45deg, #ff4757, #ff6b81);
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+#pauseButton:hover {
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+}
+
+#muteButton {
+    background: linear-gradient(45deg, #ffd700, #ffa500);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+#muteButton:hover {
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+#newGameButton {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+#newGameButton:hover {
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+#exitButton {
+    background: linear-gradient(45deg, #95a5a6, #7f8c8d);
+    box-shadow: 0 4px 15px rgba(149, 165, 166, 0.3);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    opacity: 1;
+}
+
+#exitButton:hover {
+    box-shadow: 0 6px 20px rgba(149, 165, 166, 0.4);
+}
+
+/* Animasi untuk efek hover pada tombol */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(0, 255, 136, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.5); }
+    100% { box-shadow: 0 0 5px rgba(0, 255, 136, 0.3); }
+}
+
+/* Responsif untuk perangkat mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .game-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+}
+
+.instructions {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.instructions p {
+    margin-bottom: 5px;
+}
+
+.instructions span {
+    color: #00ff88;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.5em; /* Memberikan ruang untuk ikon */
+    text-align: center;
+}
+
+.controls-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Memberikan jarak antar petunjuk */
+    flex-wrap: wrap; /* Agar responsif */
+}
+
+.controls-list p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#startMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#startMenu h2 {
+    color: #00ff88;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+#startMenu button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+#gameArea {
+    /* Initial state is hidden, controlled by JS */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Class untuk menyembunyikan elemen dengan fade out */
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Class untuk menampilkan elemen dengan fade in */
+.fade-in {
+    opacity: 1;
+}
